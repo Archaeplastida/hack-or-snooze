@@ -111,6 +111,7 @@ function updateUIOnUserLogin() {
   console.debug("updateUIOnUserLogin");
 
   $allStoriesList.show();
+  $mainNavbarLinks.toggle("hidden");
 
   updateNavOnLogin();
 }
