@@ -52,19 +52,35 @@
   </div>
 </nav>
 
-<form id="submission-form" class="hidden">
-  <h4>Submit</h4>
-  <label for="author"></label>
-  <input id="author">
-</form>
+
 <!-- area for stories (all stories, user stories, favorites) -->
 <section class="stories-container container">
+  <form id="submission-form" class="hidden">
+    <div>
+    <label for="author">author</label>
+    <input id="author" placeholder="author name" required>
+    </div>
+    <div>
+    <label for="title">title</label>
+    <input id="title" placeholder="story title" required>
+  </div>
+  <div>
+    <label for="url">url</label>
+    <input id="url" placeholder="story url" required>
+  </div>
+  <button id="submit-button">submit</button>
+  <hr>
+  </form>
 
   <!-- loading message (removed by JS after stories loaded) -->
   <div id="stories-loading-msg">Loading&hellip;</div>
 
   <!-- List of all stories -->
   <ol id="all-stories-list" class="stories-list"></ol>
+  <ol id="favorite-stories-list" class="stories-list"></ol>
+  <ol id="my-stories-list" class="stories-list"></ol>
+
+  <ol id="user-profile" class="stories-list"></ol>
 
 </section>
 
